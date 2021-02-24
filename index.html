@@ -1,0 +1,450 @@
+<!-- CITATIONS/ONLINE RESOURCES-->
+<!--For general coding knowledge: https://www.w3schools.com/-->
+<!-- For inspiration and imgs: https://pimpmykeyboard.com/
+For shopping cart icon: https://www.flaticon.com/free-icon/shopping-cart_263142
+For pop-up and java-script: https://www.w3schools.com/howto/howto_js_popup_form.asp -->
+<!--For Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/-->
+<!-- some imgs were created by myself, Won Jae You-->
+
+
+<!DOCTYPE html>
+<html>
+
+<header>
+    <meta charset="utf-8">
+    <title>DoverCap - Style guide</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <script src="scripts.js"></script>
+    <ul class="head-list">
+        <li><img src="img/name.png" alt="logo"></li>
+    </ul>
+</header>
+
+<nav>
+    <div class="sidenav">
+        <a href="#about">About</a>
+        <a href="#styling">Styling</a>
+        <a href="#interactive_elements">Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="#potential_images">Potential Imageries</a>
+        <a href="product_page.html" target="_blank">Product Listing</a>
+        <a href="shopping_cart.html" target="_blank">Shopping Cart</a>
+    </div>
+</nav>
+
+<body>
+
+
+    <top_nav>
+        <div class="topnav">
+            <div class="dropdown">
+                <button class="dropbtn"> Select
+          <i class = "fa fa-caret-down"></i>
+        </button>
+                <div class="dropdown-content">
+                    <a href="#about">About</a>
+                    <a href="#styling">Styling</a>
+                    <a href="#interactive_elements">Elements</a>
+                    <a href="#combined_elements">Combined Elements</a>
+                    <a href="#potential_images">Potential Imageries</a>
+                </div>
+            </div>
+        </div>
+    </top_nav>
+
+
+
+    <main>
+        <section id="about">
+            <h2> About the Company</h2>
+            <section class="element about-element">
+
+                <ul>
+                    <li>
+                        <p>DoverCap is e-commerce store, which provides custom keycaps with different options of size, material and texture to those mechanical keyboard enthusiasts who is looking to customize/upgrade their exisiting mechanical keyboards
+                            to look and feel to match their preference.</p>
+                    </li>
+
+                </ul>
+            </section>
+        </section>
+
+        <section id="styling">
+            <h2>Styling</h2>
+            <section class="element" id="color">
+                <h3>Color Palette</h3>
+                <section class="color-list">
+                    <div class="color-item color-1">
+                        #51301D
+                    </div>
+                    <div class="color-item color-2">
+                        #C3996B
+                    </div>
+                    <div class="color-item color-3">
+                        #3C3738
+                    </div>
+                    <div class="color-item color-4">
+                        #E0E0E0
+                    </div>
+                </section>
+            </section>
+
+            <section id="typography">
+                <h3>Typography</h3>
+
+                <section class="element typography">
+                    <h1 class="grid-item-1">Heading One</h1>
+                    <h5 class="grid-item-6">44px, Comfortaa, Cursive</h5>
+                    <h2 class="grid-item-2">Heading Two</h2>
+                    <h5 class="grid-item-7">38px, Poppins, San-Sarief</h5>
+                    <h3 class="grid-item-3">Heading Three</h3>
+                    <h5 class="grid-item-8">25px, Poppins, San-Sarief</h5>
+                    <h4 class="grid-item-4">Heading Four</h4>
+                    <h5 class="grid-item-9">20px, Poppins, San-Sarief</h5>
+                    <h5 class="grid-item-5">Body</h5>
+                    <h5 class="grid-item-10">16px, Poppins, San-Sarief</h5>
+
+                    <code class="grid-item-12">&lt;h3&gt;Heading Three&lt;/h3&gt;</code>
+                </section>
+
+                <section class="element">
+                    <h3>Paragraphs</h3>
+
+                    <div class="paragraph">
+                        <p class="flexitem flex-item-2">Our company "DoverCap", looks to deliver the most asthetically pleasing, and higest quality mechanical keybaord keycaps to the enthusiasts, allowing them to customize their keyboard to their full extent of creativity. Among all
+                            the design of the keycaps, the customers are able to choose from 3 different types of plastic: PBT, ABS, and POM. Each type of plastic have different textures, quality and price.</p>
+                        <code class="flexitem flex-item-4">&lt;p&gt;Lorem Ipsum paragraph goes here...&lt;/p&gt;</code>
+                    </div>
+                </section>
+
+                <section class="element">
+                    <h3>Numbered Lists</h3>
+                    <div class="number-list">
+
+
+                        <ol>
+                            <li>PBT</li>
+                            <li>ABS</li>
+                            <li>POM</li>
+                        </ol>
+
+                        <ol>
+                            <li>Product name #1</li>
+                            <li>Product name #2</li>
+                            <li>Product name #3</li>
+                        </ol>
+
+                        <code>
+                  &lt;ol&gt; 
+                  <br>
+                  &lt;li&gt;PBT&lt;/li&gt;
+                  <br>
+                  &lt;li&gt;ABS&lt;/li&gt;
+                  <br>
+                  &lt;li&gt;POM&lt;/li&gt;
+                  <br>
+                  &lt;/ol&gt;
+                </code>
+
+                    </div>
+
+
+                </section>
+            </section>
+        </section>
+
+        <!-- INTERACTIVE ELEMENTS SECTION // -->
+        <section id="interactive_elements">
+            <h2>Interactive Elements</h2>
+
+            <section class="element" id="text-link">
+                <h3>In-text link</h3>
+
+                <div class="text-link">
+                    <div>Click <a href="#text-link">here</a> for more information.</div>
+                    <br>
+
+                    <code>Click &lt;a href = "#"&gt;here&lt;/a&gt;for more information.</code>
+                </div>
+
+
+
+
+
+
+            </section>
+
+            <section id="nav-link" class="element">
+
+                <h3>Navigation Link</h3>
+                <div class="example-nav">
+                    <a class="button-nav" href="#nav-link">Nav Link</a>
+                    <a class="button-nav" href="#nav-link">Nav Link 2</a>
+                    <a class="button-nav" href="#nav-link">Nav Link 3</a>
+                    <a class="button-nav" href="#nav-link">Nav Link 4</a>
+                    <div class="line-break"></div>
+                    <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+                </div>
+
+            </section>
+
+
+            <section class="element">
+                <h3>Buttons</h3>
+                <div class="button-element">
+                    <input type="button" class="button button-standard" value="Standard">
+                    <input type="button" class="button button-confirm" value="Confirm">
+                    <input type="button" class="button button-warning" value="Warning">
+                    <input type="button" class="button button-danger" value="Danger">
+                    <code>&lt;input type = "submit" value = "Submit"&gt;</code>
+                    <code>&lt;input type = "reset" value = "Reset"&gt;</code>
+                </div>
+            </section>
+
+
+            <section class="element">
+                <h3>Text Input Fields</h3>
+                <div class="text-input">
+                    <input type="text" id="email" name="email">
+                    <input class="button button-standard" type="button" value="Submit">
+
+                    <code>&lt;label for = "email"&gt;Email: &lt;/label&gt;</code>
+                    <code>&lt;input type="text" id="email" name="email"&gt;</code>
+                </div>
+            </section>
+
+
+            <section class="element">
+                <h3>Radio Button</h3>
+
+                <div class="radio-input">
+                    <p>Please select a type: </p>
+                    <input type="radio" id="ex1" name="type" value="abs">
+                    <label for="ex1">ABS</label>
+                    <input type="radio" id="ex2" name="type" value="pbt">
+                    <label for="ex2">PBT</label>
+                    <input type="radio" id="ex3" name="type" value="pom">
+                    <label for="ex3">POM</label>
+
+
+                    <code>&lt;input type = "radio" id = "abs" name = "type" value = "abs"&gt;</code>
+                    <code>&lt;label for = "abs"&gt; ABS &lt;/label&gt;</code>
+                </div>
+
+
+            </section>
+
+            <section class="element">
+                <h3>Selection Element</h3>
+
+                <div class="select-input">
+
+                    <label for="size">Choose from:</label>
+                    <br>
+
+                    <select name="Size" id="size">
+          <option value="full">FULL</option>
+          <option value="tkl">Ten-Keyless</option>
+          <option value="60">60%</option>
+        </select>
+
+                    <code>&lt;label for = "size"&gt;Choose From:&lt;/label&gt;</code>
+                    <code>
+          &lt;select name = "Size" id = "size"&gt;<br>
+          &lt;option value = "full"&gt;FULL&lt;/option&gt;<br>
+          &lt;option value = "tkl"&gt;TKL&lt;/option&gt;<br>
+        </code>
+                </div>
+            </section>
+
+            <section id="image-link" class="element">
+                <h3>Image as a Link</h3>
+                <div class="image-link">
+                    <a class="product_image zoom" href="#image-link"><img src="img/logo_with_name.png" alt="logo"></a>
+                    <code>&lt;a href = "#"&gt;&lt;img src = "img/logo.png" alt = "logo"&gt;&lt;/a&gt;</code>
+                </div>
+            </section>
+
+        </section>
+
+        <!-- COMBINED ELEMENTS SECTION // -->
+        <section id="combined_elements">
+            <h2>Combined Elements</h2>
+
+            <section class="element">
+                <h3>Product/Service Listing</h3>
+                <!-- Product Name/Image / Product Description / Price / Type / Add to Cart Button / Added to Cart Confirmation / Cancel-->
+
+                <div class="product-flexbox-container">
+
+                    <div class="product-flexbox-container-1">
+                        <a class="product_image zoom" href="#"><img src="img/logo.png" alt="logo"></a>
+                    </div>
+
+                    <div class="product-flexbox-container-2">
+                        <h3> Dover Keycap Set</h3>
+                        <h5> A keycap set stylized by us, inspired by wood working technique, dover joints.</h5>
+                        <h5>Click for <a href="#">more.</a></h5>
+
+                        <div class="product-flexbox-container-4">
+                            <h4>CAD 55.00$ </h4>
+
+                            <input class="sets" type="number" id="quantity" name="quantity" min="1" max="20">
+                            <label class="sets" for="quantity"> Sets </label>
+                        </div>
+
+
+                        <div class="product-flexbox-container-3">
+
+                            <div class="product-flexbox-container-sm">
+                                <label for="type">Material:</label>
+                                <select name="type" id="type">
+                                <option value="abs">ABS</option>
+                                <option value="pbt">PBT</option>
+                                <option value="pom">POM</option>
+                                </select>
+                            </div>
+
+                            <div class="product-flexbox-container-sm">
+                                <label for="size">Size:</label>
+
+                                <select name="Size" id="size">
+                                    <option value="full">FULL</option>
+                                <option value="tkl">Ten-Keyless</option>
+                                <option value="60">60%</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="product-flexbox-container-5">
+                            <input class="button-confirm button" type="button" value="Add to Cart">
+                            <input class="button-warning button" type="button" value="Cancel">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="element">
+
+
+                <div class="payment-flexbox-container">
+
+                    <h3>Payment Form</h3>
+
+                    <div class="payment-flexbox-container-1">
+                        <label class="payment-flexbox-item payment-flexbox-item-1" for="fname">First Name:</label>
+                        <label class="payment-flexbox-item payment-flexbox-item-3" for="lname">Last Name:</label>
+                        <input class="payment-flexbox-item payment-flexbox-item-2" type="text" id="fname" name="fname">
+                        <input class="payment-flexbox-item payment-flexbox-item-4" type="text" id="lname" name="lname">
+                    </div>
+
+
+                    <div class="payment-flexbox-container-3">
+                        <label class="cardnumber-label" for="cardnumber">Card #:</label>
+                        <input class="cardnumber" type="text" id="cardnumber" name="cardnumber">
+                        <label class="cvv-label" for="cvv"> CVV:</label>
+                        <input class="cvv" type="text" id="cvv" name="cvv">
+                    </div>
+
+                    <div class="payment-flexbox-container-4">
+                        <label class="payment-flexbox-item expirydate-label" for="expirydate">Expiry Date: </label>
+                        <input class="payment-flexbox-item expirydate" type="month" id="expirydate" name="expirydate">
+                        <label class="payment-flexbox-item postalcode-label" for="postalcode">Postal Code:</label>
+                        <input class="payment-flexbox-item postalcode" type="text" id="postalcode" name="postalcode">
+                    </div>
+
+                    <div class="payment-flexbox-container-5">
+                        <h3 class="payment-flexbox-item">Total : 55.00 CAD</h3>
+                        <div class="payment-flexbox-item payment-flexbox-item-blank"></div>
+                    </div>
+
+                    <div class="payment-flexbox-container-6">
+                        <input class="button-confirm button" type="button" value="Continue">
+                        <input class="button-warning button" type="button" value="Cancel">
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="element">
+                <h3>Checkout Cart</h3>
+                <!-- Product name / cost / quantity , remove item, -->
+
+                <div class="cart-flexbox-container">
+                    <a class="product_image cart-flexbox-item-1" href="#"><img src="img/logo.png" alt="logo" style=width:64px;height:64px;></a>
+                    <h5 class="cart-flexbox-item-2">Dover Keycap Set (FULL)(PBT) (CAD 55.00$)</h5>
+                    <input class="cart-flexbox-item-3" type="number" id="quantity" name="quantity" min="1" max="20">
+                    <input class="cart-flexbox-item-4 button-sm button-danger" type="button" value="Remove">
+                </div>
+
+                <div class="cart-flexbox-container">
+                    <a class="product_image cart-flexbox-item-1" href="#"><img src="img/logo.png" alt="logo" style=width:64px;height:64px;></a>
+                    <h5 class="cart-flexbox-item-2">Dover Keycap Set (FULL)(PBT) (CAD 55.00$)</h5>
+                    <input class="cart-flexbox-item-3" type="number" id="quantity" name="quantity" min="1" max="20">
+                    <input class="cart-flexbox-item-4 button-sm button-danger" type="button" value="Remove">
+                </div>
+
+                <div class="cart-flexbox-container">
+                    <a class="product_image cart-flexbox-item-1" href="#"><img src="img/logo.png" alt="logo" style=width:64px;height:64px;></a>
+                    <h5 class="cart-flexbox-item-2">Dover Keycap Set (FULL)(PBT) (CAD 55.00$)</h5>
+                    <input class="cart-flexbox-item-3" type="number" id="quantity" name="quantity" min="1" max="20">
+                    <input class="cart-flexbox-item-4 button-sm button-danger" type="button" value="Remove">
+                </div>
+
+                <div class="cart-flexbox-container-2">
+                    <h3 class="cart-flexbox-item-5">Total: 155.00CAD</h3>
+                    <input class="button-confirm button " type="button" value="Proceed to Checkout">
+                </div>
+
+
+
+            </section>
+        </section>
+        <!-- // COMBINED ELEMENTS SECTION -->
+
+        <section id="potential_images">
+            <section class="element">
+                <h2>Potential Imageries</h2>
+
+
+
+                <div class="image-flexbox-container">
+                    <div class="image-flexbox-container-sm">
+                        <a class="image-flexbox-item image-flexbox-item-1" href="#"><img src="img/potential-image-1.png" alot="potential-image-1"></a>
+                        <a class="image-flexbox-item image-flexbox-item-3" href="#"><img src="img/potential-image-3.png" alot="potential-image-3"></a>
+                    </div>
+
+                    <div class="image-flexbox-container-md">
+                        <a class="image-flexbox-item image-flexbox-item-2" href="#"><img src="img/potential-image-2.png" alot="potential-image-2"></a>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </section>
+
+
+
+
+
+        </section>
+
+    </main>
+
+</body>
+
+<footer>
+    <!-- <ul class="head-list">
+          <li class="head-item">example 1</li>
+          <li class="head-item">example 2</li>
+      </ul> -->
+</footer>
+
+</html>
