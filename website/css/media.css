@@ -29,6 +29,9 @@
     .nav-brand {
         margin-left: -5rem;
     }
+    .topnav {
+        display: block;
+    }
 }
 
 @media (min-width: 933px) {
