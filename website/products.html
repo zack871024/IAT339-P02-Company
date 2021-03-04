@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<title>DoverCaps - Product Page</title>
+
+<link href="css/main.css" rel="stylesheet">
+<link href="css/media.css" rel="stylesheet">
+
+<nav>
+    <div class="sidenav">
+
+        <a class="sidenav_items button-nav" href="index.html">Home</a>
+        <a class="sidenav_items button-nav" href="index.html">Products</a>
+
+        <a class="sidenav_items button-nav" href="about.html">About & Contact Us</a>
+</nav>
+
+<body>
+    <div id="header">
+        <div class='nav-brand'>
+            <a class="logo" href='index.html'>
+                <img src="img/name.png" alt="logo" width='200px' height='50px'>
+            </a>
+
+            <a class="shopping-cart" href='shopping_cart.html'>
+                <img src="img/shopping-cart.png" alt="shopping-cart-icon" width='50px' height='50px'>
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+    <main>
+        <div class="product-flexbox-container">
+
+            <div class="product-flexbox-container-1">
+                <a class="product_image zoom"><img src="img/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="product-flexbox-container-2">
+                <h3> Dover Keycap Set</h3>
+                <h5> A keycap set stylized by us, inspired by wood working technique, dover joints.</h5>
+                <h5>Click for <a href="#">more.</a></h5>
+
+                <div class="product-flexbox-container-4">
+                    <h4>CAD 55.00$ </h4>
+
+                    <input class="sets" type="number" id="quantity" name="quantity" min="1" max="20">
+                    <label class="sets" for="quantity"> Sets </label>
+                </div>
+
+
+                <div class="product-flexbox-container-3">
+
+                    <div class="product-flexbox-container-sm">
+                        <label for="type">Material:</label>
+                        <select name="type" id="type">
+                        <option value="abs">ABS</option>
+                        <option value="pbt">PBT</option>
+                        <option value="pom">POM</option>
+                        </select>
+                    </div>
+
+                    <div class="product-flexbox-container-sm">
+                        <label for="size">Size:</label>
+
+                        <select name="Size" id="size">
+                            <option value="full">FULL</option>
+                        <option value="tkl">Ten-Keyless</option>
+                        <option value="60">60%</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="product-flexbox-container-5">
+                    <input class="button-confirm button" type="button" value="Add to Cart">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+<footer>
+</footer>
+
+</html>

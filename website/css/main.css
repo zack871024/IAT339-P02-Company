@@ -932,6 +932,21 @@ label {
 }
 
 
+/* Thank you page */
+
+.thanks-flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+
+/* End thank you page */
+
+
 /* Add animation (fade in the popup) */
 
 @-webkit-keyframes fadeIn {

@@ -10,6 +10,10 @@
     main {
         padding-left: 0;
         padding-right: 0;
+        margin-top: 3rem;
+    }
+    .product-flexbox-container {
+        margin-top: 2rem;
     }
     .head-list {
         justify-content: center;
