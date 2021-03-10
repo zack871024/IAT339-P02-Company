@@ -15,30 +15,6 @@
 <link href="css/main.css" rel="stylesheet">
 <link href="css/media.css" rel="stylesheet">
 
-<topnav>
-    <nav>
-        <topnav>
-          <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
-          <div class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="products.html">Products</a>
-            <a href="about.html">About & Contact Us</a>
-            <a href="shopping_cart.html">Cart</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-        </topnav>
-        <script>
-          function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-              x.className += " responsive";
-            } else {
-              x.className = "topnav";
-            }
-          }
-        </script>
 
 <body>
     <div id="header">
@@ -54,6 +30,31 @@
         </div>
     </div>
     <main>
+        <topnav>
+            <nav>
+                <topnav>
+                  <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+                  <div class="topnav" id="myTopnav">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About & Contact Us</a>
+                    <a href="shopping_cart.html">Cart</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
+                </topnav>
+                <script>
+                  function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                      x.className += " responsive";
+                    } else {
+                      x.className = "topnav";
+                    }
+                  }
+                </script>
+        
         <section id="about">
             <h2> About the Company</h2>
             <section class="element about-element">
