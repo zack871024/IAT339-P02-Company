@@ -21,30 +21,7 @@
 
   <link href="css/main.css" rel="stylesheet" />
   <link href="css/media.css" rel="stylesheet" />
-  <nav>
-    <topnav>
-      <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
-      <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">About & Contact Us</a>
-        <a href="shopping_cart.html">Cart</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </topnav>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
-  </nav>
+
   <body>
     <div id="header">
       <div class="nav-brand">
@@ -64,6 +41,30 @@
     </div>
 
     <main>
+      <nav>
+        <topnav>
+          <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+          <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About & Contact Us</a>
+            <a href="shopping_cart.html">Cart</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </topnav>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
+      </nav>
       <div class="banner" id="banner">
         <!-- img src: https://unsplash.com/photos/UHqfUTDmdC4 -->
         <img class="banner-image" src="img/banner-x1.jpg " />
