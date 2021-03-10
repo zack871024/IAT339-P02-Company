@@ -1,154 +1,158 @@
 <!DOCTYPE html>
 <html>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<meta charset="utf-8">
-<title>DoverCaps - Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <meta charset="utf-8" />
+  <title>DoverCaps - Homepage</title>
 
-<link href="css/main.css" rel="stylesheet">
-<link href="css/media.css" rel="stylesheet">
-
-<nav>
-    <div class="sidenav">
-
-        <a class="sidenav_items button-nav" href="index.html">Home</a>
-
-        <a class="sidenav_items button-nav">Products</a>
-
-        <div class="product-filter">
-            <h5 class="product-filter-title">Material</h5>
-
-            <div class="product-filter-type">
-                <input type="checkbox" id="type" name="type" value="abs">
-                <label for="type">ABS</label>
-                <input type="checkbox" id="type" name="type" value="PBT">
-                <label for="type">PBT</label>
-                <input type="checkbox" id="type" name="type" value="POM">
-                <label for="type">POM</label>
-
-            </div>
-            <h5 class="product-filter-title">Size</h5>
-            <div class="product-filter-type">
-
-
-                <input type="checkbox" id="type" name="type" value="FULL">
-                <label for="type"></label>FULL</label>
-                <input type="checkbox" id="type" name="type" value="TKL">
-                <label for="type">TKL</label>
-                <input type="checkbox" id="type" name="type" value="60%">
-                <label for="type">60%</label>
-
-            </div>
-
-        </div>
-
-        <a class="sidenav_items button-nav" href="about.html">About & Contact Us </a>
-</nav>
-
-<body>
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/media.css" rel="stylesheet" />
+  <nav>
+    <topnav>
+      <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About & Contact Us</a>
+        <a href="shopping_cart.html">Cart</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </topnav>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </nav>
+  <body>
     <div id="header">
-        <div class='nav-brand'>
-            <a class="logo" href='index.html'>
-                <img src="img/name.png" alt="logo" width='200px' height='50px'>
-            </a>
+      <div class="nav-brand">
+        <a class="logo" href="index.html">
+          <img src="img/name.png" alt="logo" width="200px" height="50px" />
+        </a>
 
-            <a class="shopping-cart" href='shopping_cart.html'>
-                <img src="img/shopping-cart.png" alt="shopping-cart-icon" width='50px' height='50px'>
-            </a>
-
-        </div>
+        <a class="shopping-cart" href="shopping_cart.html">
+          <img
+            src="img/shopping-cart.png"
+            alt="shopping-cart-icon"
+            width="50px"
+            height="50px"
+          />
+        </a>
+      </div>
     </div>
 
-
-
-
     <main>
-        <div class="banner" id="banner">
-            <!-- img src: https://unsplash.com/photos/UHqfUTDmdC4 -->
-            <img class="banner-image" src="img/banner-x1.jpg ">
+      <div class="banner" id="banner">
+        <!-- img src: https://unsplash.com/photos/UHqfUTDmdC4 -->
+        <img class="banner-image" src="img/banner-x1.jpg " />
+      </div>
+      <h2 class="page-title">Products</h2>
+
+      <div class="product-listing-container">
+        <div class="product-listing-container-sm">
+          <a class="product_image zoom" href="products.html"
+            ><img src="img/logo.png" alt="logo"
+          /></a>
+          <a href="products.html">
+            <h3>Dover Keycap Set</h3>
+          </a>
+          <h4>CAD 55.00$</h4>
         </div>
-        <h2 class="page-title">Products</h2>
 
-        <div class="product-listing-container">
+        <div class="product-listing-container-sm">
+          <a class="product_image zoom" href="products.html"
+            ><img src="img/logo.png" alt="logo"
+          /></a>
 
-
-            <div class="product-listing-container-sm">
-                <a class="product_image zoom" href="products.html"><img src="img/logo.png" alt="logo"></a>
-                <a href="products.html">
-                    <h3> Dover Keycap Set</h3>
-                </a>
-                <h4>CAD 55.00$ </h4>
-            </div>
-
-
-            <div class="product-listing-container-sm">
-                <a class="product_image zoom" href="products.html"><img src="img/logo.png" alt="logo"></a>
-
-                <a href="products.html">
-                    <h3> Dover Keycap Set</h3>
-                </a>
-                <h4>CAD 55.00$ </h4>
-            </div>
-
-            <div class="product-listing-container-sm">
-                <a class="product_image zoom" href="products.html"><img src="img/logo.png" alt="logo"></a>
-                <a href="products.html">
-                    <h3> Dover Keycap Set</h3>
-                </a>
-                <h4>CAD 55.00$ </h4>
-            </div>
-
-            <div class="product-listing-container-sm">
-                <a class="product_image zoom" href="products.html"><img src="img/logo.png" alt="logo"></a>
-                <a href="products.html">
-                    <h3> Dover Keycap Set</h3>
-                </a>
-                <h4>CAD 55.00$ </h4>
-            </div>
-
-            <div class="product-listing-container-sm">
-                <a class="product_image zoom" href="products.html"><img src="img/logo.png" alt="logo"></a>
-                <a href="products.html">
-                    <h3> Dover Keycap Set</h3>
-                </a>
-                <h4>CAD 55.00$ </h4>
-            </div>
-
-            <div class="product-listing-container-sm">
-                <a class="product_image zoom" href="products.html"><img src="img/logo.png" alt="logo"></a>
-                <a href="products.html">
-                    <h3> Dover Keycap Set</h3>
-                </a>
-                <h4>CAD 55.00$ </h4>
-            </div>
-
-            <div class="product-listing-container-sm">
-                <a class="product_image zoom" href="products.html"><img src="img/logo.png" alt="logo"></a>
-                <a href="products.html">
-                    <h3> Dover Keycap Set</h3>
-                </a>
-                <h4>CAD 55.00$ </h4>
-            </div>
-
-            <div class="product-listing-container-sm">
-                <a class="product_image zoom" href="products.html"><img src="img/logo.png" alt="logo"></a>
-                <a href="products.html">
-                    <h3> Dover Keycap Set</h3>
-                </a>
-                <h4>CAD 55.00$ </h4>
-            </div>
-
-
-
+          <a href="products.html">
+            <h3>Dover Keycap Set</h3>
+          </a>
+          <h4>CAD 55.00$</h4>
         </div>
+
+        <div class="product-listing-container-sm">
+          <a class="product_image zoom" href="products.html"
+            ><img src="img/logo.png" alt="logo"
+          /></a>
+          <a href="products.html">
+            <h3>Dover Keycap Set</h3>
+          </a>
+          <h4>CAD 55.00$</h4>
+        </div>
+
+        <div class="product-listing-container-sm">
+          <a class="product_image zoom" href="products.html"
+            ><img src="img/logo.png" alt="logo"
+          /></a>
+          <a href="products.html">
+            <h3>Dover Keycap Set</h3>
+          </a>
+          <h4>CAD 55.00$</h4>
+        </div>
+
+        <div class="product-listing-container-sm">
+          <a class="product_image zoom" href="products.html"
+            ><img src="img/logo.png" alt="logo"
+          /></a>
+          <a href="products.html">
+            <h3>Dover Keycap Set</h3>
+          </a>
+          <h4>CAD 55.00$</h4>
+        </div>
+
+        <div class="product-listing-container-sm">
+          <a class="product_image zoom" href="products.html"
+            ><img src="img/logo.png" alt="logo"
+          /></a>
+          <a href="products.html">
+            <h3>Dover Keycap Set</h3>
+          </a>
+          <h4>CAD 55.00$</h4>
+        </div>
+
+        <div class="product-listing-container-sm">
+          <a class="product_image zoom" href="products.html"
+            ><img src="img/logo.png" alt="logo"
+          /></a>
+          <a href="products.html">
+            <h3>Dover Keycap Set</h3>
+          </a>
+          <h4>CAD 55.00$</h4>
+        </div>
+
+        <div class="product-listing-container-sm">
+          <a class="product_image zoom" href="products.html"
+            ><img src="img/logo.png" alt="logo"
+          /></a>
+          <a href="products.html">
+            <h3>Dover Keycap Set</h3>
+          </a>
+          <h4>CAD 55.00$</h4>
+        </div>
+      </div>
     </main>
+  </body>
 
-
-</body>
-
-<footer>
-</footer>
-
+  <footer></footer>
 </html>
