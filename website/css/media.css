@@ -1,4 +1,4 @@
-@media (max-width: 933px) {
+@media (max-width: 823px) {
     body {
         display: flex;
         flex-direction: column;
@@ -34,7 +34,7 @@
     }
 }
 
-@media (min-width: 933px) {
+@media (min-width: 823px) {
     .head-list {
         justify-content: flex-start;
         margin-left: 15%;

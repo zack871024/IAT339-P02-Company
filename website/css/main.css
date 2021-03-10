@@ -51,6 +51,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 10000rem;
+    margin-top: 10vw;
     height: 3rem;
 }
 
@@ -628,6 +629,20 @@ select {
 /* 
   COMBINED ELEMENTS ------------------- 
 */
+
+
+/* Product listings */
+
+#progress {
+    width: 100%;
+    background-color: grey;
+}
+
+#bar {
+    width: 1%;
+    height: 30px;
+    background-color: red;
+}
 
 .product-flexbox-item {
     justify-self: right;
