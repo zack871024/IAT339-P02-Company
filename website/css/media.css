@@ -1,68 +1,52 @@
-@media (max-width: 823px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .sidenav {
-        display: none;
-    }
-    main {
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 3rem;
-    }
-    .product-flexbox-container {
-        margin-top: 2rem;
-    }
-    .head-list {
-        justify-content: center;
-    }
-    .page-title {
-        margin-top: 10rem;
-    }
-    .banner-image {
-        margin-top: 5rem;
-        margin-bottom: -7rem;
-        padding-bottom: 0;
-    }
-    .nav-brand {
-        margin-left: -5rem;
-    }
-    .topnav {
-        display: block;
-    }
+@media (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .head-list {
+    justify-content: center;
+  }
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 }
 
-@media (min-width: 823px) {
-    .head-list {
-        justify-content: flex-start;
-        margin-left: 15%;
-    }
-    header {
-        grid-column: span 3;
-    }
-    nav {
-        grid-column: span 1;
-        justify-self: center;
-    }
-    main {
-        grid-column: span 2;
-        width: 100%;
-    }
-    footer {
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-    body {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 120px auto auto 30px;
-    }
-    .sidenav a {
-        text-align: center;
-        float: none;
-    }
-    .topnav {
-        display: none;
-    }
+@media (min-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .head-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }

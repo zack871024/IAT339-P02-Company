@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 <meta charset="utf-8">
 <title>DoverCaps - Thank You!</title>
 
 <link href="css/main.css" rel="stylesheet">
 <link href="css/media.css" rel="stylesheet">
 
-<nav>
-    <div class="sidenav">
-
-        <a class="sidenav_items button-nav" href="index.html">Home</a>
-        <a class="sidenav_items button-nav" href="index.html">Products</a>
-
-        <a class="sidenav_items button-nav" href="about.html">About & Contact Us</a>
-</nav>
-
-<body>
-    <div id="header">
-        <div class='nav-brand'>
-            <a class="logo" href='index.html'>
-                <img src="img/name.png" alt="logo" width='200px' height='50px'>
+<topnav>
+    <nav>
+        <topnav>
+          <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+          <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About & Contact Us</a>
+            <a href="shopping_cart.html">Cart</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
             </a>
-
-            <a class="shopping-cart" href='shopping_cart.html'>
-                <img src="img/shopping-cart.png" alt="shopping-cart-icon" width='50px' height='50px'>
-            </a>
-
-        </div>
-    </div>
-
-
+          </div>
+        </topnav>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
 
 
     <main>
