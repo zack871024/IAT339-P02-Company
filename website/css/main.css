@@ -640,7 +640,6 @@ select {
 
 .product-flexbox-container img {
     padding-top: 4rem;
-    width: 80%;
 }
 
 .product-flexbox-container h3 {
@@ -843,19 +842,23 @@ POTENTIAL IMAGERIES---------------------
     height: 100%;
 }
 
-.image-flexbox-container-sm a img {
-    max-width: 100%;
-}
+.image-flexbox-container-sm a img {}
 
 
 /* TEMPLATE EXTRAS */
+
+.product-listing-container-sm img {
+    align-self: center;
+    width: 10rem;
+    height: 80%;
+}
 
 .product-listing-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 2rem;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -863,8 +866,9 @@ POTENTIAL IMAGERIES---------------------
     display: flex;
     flex-direction: column;
     max-width: 30%;
+    margin-right: 3rem;
     align-self: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: nowrap;
 }
 
@@ -873,12 +877,14 @@ POTENTIAL IMAGERIES---------------------
     flex-direction: row;
     max-width: 70%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .product-listing-container-sm {
     display: flex;
     margin: 3.5rem;
+    flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
 }
