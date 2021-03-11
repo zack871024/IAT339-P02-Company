@@ -989,11 +989,14 @@ label {
 }
 
 .logo {
-    margin-left: 10%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .shopping-cart {
-    margin-right: 15%;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
 }
 
 .form-popup {
