@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <html lang="en"></html>
+<html lang="en">
+
+</html>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -30,76 +32,75 @@
     <main>
         <topnav>
             <nav>
-                <topnav>
-                    <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
-                    <div class="topnav" id="myTopnav">
-                        <a href="index.html" class="active">Home</a>
-                        <a href="products.html">Products</a>
-                        <a href="about.html">About & Contact Us</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </div>
-                </topnav>
-                <script>
-                    function myFunction() {
-                        var x = document.getElementById("myTopnav");
-                        if (x.className === "topnav") {
-                            x.className += " responsive";
-                        } else {
-                            x.className = "topnav";
-                        }
-                    }
-                </script>
+                <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About & Contact Us</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+        </topnav>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
 
-                <section id="about">
-                    <h2> About the Company</h2>
-                    <section class="element about-element">
-                        <ul>
-                            <li>
-                                <p>DoverCap is e-commerce store, which provides custom keycaps with different options of size, material and texture to those mechanical keyboard enthusiasts who is looking to customize/upgrade their exisiting mechanical keyboards
-                                    to look and feel to match their preference.</p>
-                            </li>
-                        </ul>
-                        <h2> Contact Us</h2>
-                        <section class="element about-element">
-                            <ul>
-                                <li>
-                                    <div class="container">
-                                        <form>
+        <section id="about">
+            <h2> About the Company</h2>
+            <section class="element about-element">
+                <ul>
+                    <li>
+                        <p>DoverCap is e-commerce store, which provides custom keycaps with different options of size, material and texture to those mechanical keyboard enthusiasts who is looking to customize/upgrade their exisiting mechanical keyboards
+                            to look and feel to match their preference.</p>
+                    </li>
+                </ul>
+                <h2> Contact Us</h2>
+                <section class="element about-element">
+                    <ul>
+                        <li>
+                            <div class="container">
+                                <form>
 
-                                            <label for="fname">First Name</label>
-                                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                                            <label for="lname">Last Name</label>
-                                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                                            <label for="question">Question</label>
-                                            <select id="quesiton" name="questions">
+                                    <label for="question">Question</label>
+                                    <select id="quesiton" name="questions">
                                 <option value="general">General Inquiry</option>
                                 <option value="order_problem">Order Problem</option>
                                 <option value="shipping">Shipping</option>
                                 <option value="refund">Return / Refund</option>
                                 <option value="feedback">Feedback</option>
                               </select>
-                                            <label for="message">Message</label>
-                                            <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-                                            <div class="popup button button-confirm" onclick="myFunction()">Submit
-                                                <span class="popuptext" id="myPopup">Message Sent!</span>
-                                            </div>
-                                            <script>
-                                                // When the user clicks on <div>, open the popup
-                                                function myFunction() {
-                                                    var popup = document.getElementById("myPopup");
-                                                    popup.classList.toggle("show");
-                                                }
-                                            </script>
-                                        </form>
+                                    <div class="popup button button-confirm" onclick="myFunction()">Submit
+                                        <span class="popuptext" id="myPopup">Message Sent!</span>
                                     </div>
-                                </li>
-                            </ul>
-                        </section>
-                    </section>
+                                    <script>
+                                        // When the user clicks on <div>, open the popup
+                                        function myFunction() {
+                                            var popup = document.getElementById("myPopup");
+                                            popup.classList.toggle("show");
+                                        }
+                                    </script>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </section>
     </main>
 </body>
