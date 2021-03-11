@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <meta charset="utf-8">
 <title>DoverCaps - My Cart</title>
 
@@ -18,123 +15,139 @@
 <script src="scripts.js"></script>
 
 <div id="header">
-    
 
-<body>
-    <main>
-        <nav>
-            <topnav>
-              <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
-              <div class="topnav" id="myTopnav">
-                <a href="index.html" class="active">Home</a>
-                <a href="products.html">Products</a>
-                <a href="about.html">About & Contact Us</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
+
+    <body>
+        <div id="header">
+            <div class='nav-brand'>
+                <a class="logo" href='index.html'>
+                    <img src="img/name.png" alt="logo" width='200px' height='50px'>
                 </a>
-              </div>
-            </topnav>
-            <script>
-              function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                  x.className += " responsive";
-                } else {
-                  x.className = "topnav";
-                }
-              }
-            </script>
-        <h2 class="page-title">My Cart</h2>
 
-        <div class="cart-flexbox-container">
-            <a class="product_image cart-flexbox-item-1" href="#"><img src="img/logo.png" alt="logo" style=width:64px;height:64px;></a>
-            <h5 class="cart-flexbox-item-2">Dover Keycap Set (FULL)(PBT) (CAD 55.00$)</h5>
-            <input class="cart-flexbox-item-3" type="number" id="quantity" name="quantity" min="1" max="20">
-            <input class="cart-flexbox-item-4 button-sm button-danger" type="button" value="Remove">
-        </div>
+                <a class="shopping-cart" href='shopping_cart.html'>
+                    <img src="img/shopping-cart.png" alt="shopping-cart-icon" width='50px' height='50px'>
+                </a>
 
-        <div class="cart-flexbox-container">
-            <a class="product_image cart-flexbox-item-1" href="#"><img src="img/logo.png" alt="logo" style=width:64px;height:64px;></a>
-            <h5 class="cart-flexbox-item-2">Dover Keycap Set (FULL)(PBT) (CAD 55.00$)</h5>
-            <input class="cart-flexbox-item-3" type="number" id="quantity" name="quantity" min="1" max="20">
-            <input class="cart-flexbox-item-4 button-sm button-danger" type="button" value="Remove">
-        </div>
-
-        <div class="cart-flexbox-container">
-            <a class="product_image cart-flexbox-item-1" href="#"><img src="img/logo.png" alt="logo" style=width:64px;height:64px;></a>
-            <h5 class="cart-flexbox-item-2">Dover Keycap Set (FULL)(PBT) (CAD 55.00$)</h5>
-            <input class="cart-flexbox-item-3" type="number" id="quantity" name="quantity" min="1" max="20">
-            <input class="cart-flexbox-item-4 button-sm button-danger" type="button" value="Remove">
-        </div>
-
-        <div class="cart-flexbox-container">
-            <a class="product_image cart-flexbox-item-1" href="#"><img src="img/logo.png" alt="logo" style=width:64px;height:64px;></a>
-            <h5 class="cart-flexbox-item-2">Dover Keycap Set (FULL)(PBT) (CAD 55.00$)</h5>
-            <input class="cart-flexbox-item-3" type="number" id="quantity" name="quantity" min="1" max="20">
-            <input class="cart-flexbox-item-4 button-sm button-danger" type="button" value="Remove">
-        </div>
-
-        <div class="cart-flexbox-container-2">
-            <h3 class="cart-flexbox-item-5">Total: 220.00 CAD</h3>
-            <button class="button-confirm button" onclick="openForm()">Proceed to Checkout</button>
-        </div>
-    </main>
-
-    <div class="form-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
-
-            <div class="payment-flexbox-container">
-
-                <h3>Payment Form</h3>
-
-                <div class="payment-flexbox-container-1">
-                    <label class="payment-flexbox-item payment-flexbox-item-1" for="fname">First Name:</label>
-                    <label class="payment-flexbox-item payment-flexbox-item-3" for="lname">Last Name:</label>
-                    <input class="payment-flexbox-item payment-flexbox-item-2" type="text" id="fname" name="fname">
-                    <input class="payment-flexbox-item payment-flexbox-item-4" type="text" id="lname" name="lname">
-                </div>
-
-
-                <div class="payment-flexbox-container-3">
-                    <label class="cardnumber-label" for="cardnumber">Card #:</label>
-                    <input class="cardnumber" type="text" id="cardnumber" name="cardnumber">
-                    <label class="cvv-label" for="cvv"> CVV:</label>
-                    <input class="cvv" type="text" id="cvv" name="cvv">
-                </div>
-
-                <div class="payment-flexbox-container-4">
-                    <label class="payment-flexbox-item expirydate-label" for="expirydate">Expiry Date: </label>
-                    <input class="payment-flexbox-item expirydate" type="month" id="expirydate" name="expirydate">
-                    <label class="payment-flexbox-item postalcode-label" for="postalcode">Postal Code:</label>
-                    <input class="payment-flexbox-item postalcode" type="text" id="postalcode" name="postalcode">
-                </div>
-
-                <div class="payment-flexbox-container-5">
-                    <h3 class="payment-flexbox-item">Total : 220.00 CAD</h3>
-                    <div class="payment-flexbox-item payment-flexbox-item-blank"></div>
-                </div>
-
-                <div class="payment-flexbox-container-6">
-                    <!-- <input class="button-confirm button" type="button" value="Continue" onclick="closeForm()"> -->
-                    <a class="button-confirm button" type="button" value="Continue" href='thankyou.html'>Continue</a>
-                    <input class="button-warning button" type="button" value="Cancel" onclick="closeForm()">
-                </div>
             </div>
-        </form>
-    </div>
-</body>
 
-<footer>
-</footer>
+        </div>
+        <main>
+            <nav>
+                <topnav>
+                    <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+                    <div class="topnav" id="myTopnav">
+                        <a href="index.html" class="active">Home</a>
+                        <a href="products.html">Products</a>
+                        <a href="about.html">About & Contact Us</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </topnav>
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                </script>
 
-<script>
-    function openForm() {
-        document.getElementById("myForm").style.display = "block";
-    }
+            </nav>
 
-    function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-    }
-</script>
+            <h2 class="page-title">My Cart</h2>
+
+            <div class="cart-flexbox-container">
+                <a class="product_image cart-flexbox-item-1" href="#"><img href="products_2_details.html" src="img/logo.png" alt="logo" style=width:64px;height:64px;></a>
+                <h5 class="cart-flexbox-item-2">Dover Keycap Set (FULL)(PBT) (CAD 55.00$)</h5>
+                <input class="cart-flexbox-item-3" type="number" id="quantity" name="quantity" min="1" max="20">
+                <input class="cart-flexbox-item-4 button-sm button-danger" type="button" value="Remove">
+            </div>
+
+            <div class="cart-flexbox-container">
+                <a class="product_image cart-flexbox-item-1" href="#"><img href="products_1_details.html" src="img/logo.png" alt="logo" style=width:64px;height:64px;></a>
+                <h5 class="cart-flexbox-item-2">Dover Keycap Set (FULL)(PBT) (CAD 55.00$)</h5>
+                <input class="cart-flexbox-item-3" type="number" id="quantity" name="quantity" min="1" max="20">
+                <input class="cart-flexbox-item-4 button-sm button-danger" type="button" value="Remove">
+            </div>
+
+            <div class="cart-flexbox-container">
+                <a class="product_image cart-flexbox-item-1" href="#"><img href="products_2_details.html" src="img/logo.png" alt="logo" style=width:64px;height:64px;></a>
+                <h5 class="cart-flexbox-item-2">Dover Keycap Set (FULL)(PBT) (CAD 55.00$)</h5>
+                <input class="cart-flexbox-item-3" type="number" id="quantity" name="quantity" min="1" max="20">
+                <input class="cart-flexbox-item-4 button-sm button-danger" type="button" value="Remove">
+            </div>
+
+            <div class="cart-flexbox-container">
+                <a class="product_image cart-flexbox-item-1" href="#"><img href="products_1_details.html" src="img/logo.png" alt="logo" style=width:64px;height:64px;></a>
+                <h5 class="cart-flexbox-item-2">Dover Keycap Set (FULL)(PBT) (CAD 55.00$)</h5>
+                <input class="cart-flexbox-item-3" type="number" id="quantity" name="quantity" min="1" max="20">
+                <input class="cart-flexbox-item-4 button-sm button-danger" type="button" value="Remove">
+            </div>
+
+            <div class="cart-flexbox-container-2">
+                <h3 class="cart-flexbox-item-5">Total: 220.00 CAD</h3>
+                <button class="button-confirm button" onclick="openForm()">Proceed to Checkout</button>
+            </div>
+        </main>
+
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+
+                <div class="payment-flexbox-container">
+
+                    <h3>Payment Form</h3>
+
+                    <div class="payment-flexbox-container-1">
+                        <label class="payment-flexbox-item payment-flexbox-item-1" for="fname">First Name:</label>
+                        <label class="payment-flexbox-item payment-flexbox-item-3" for="lname">Last Name:</label>
+                        <input class="payment-flexbox-item payment-flexbox-item-2" type="text" id="fname" name="fname">
+                        <input class="payment-flexbox-item payment-flexbox-item-4" type="text" id="lname" name="lname">
+                    </div>
+
+
+                    <div class="payment-flexbox-container-3">
+                        <label class="cardnumber-label" for="cardnumber">Card #:</label>
+                        <input class="cardnumber" type="text" id="cardnumber" name="cardnumber">
+                        <label class="cvv-label" for="cvv"> CVV:</label>
+                        <input class="cvv" type="text" id="cvv" name="cvv">
+                    </div>
+
+                    <div class="payment-flexbox-container-4">
+                        <label class="payment-flexbox-item expirydate-label" for="expirydate">Expiry Date: </label>
+                        <input class="payment-flexbox-item expirydate" type="month" id="expirydate" name="expirydate">
+                        <label class="payment-flexbox-item postalcode-label" for="postalcode">Postal Code:</label>
+                        <input class="payment-flexbox-item postalcode" type="text" id="postalcode" name="postalcode">
+                    </div>
+
+                    <div class="payment-flexbox-container-5">
+                        <h3 class="payment-flexbox-item">Total : 220.00 CAD</h3>
+                        <div class="payment-flexbox-item payment-flexbox-item-blank"></div>
+                    </div>
+
+                    <div class="payment-flexbox-container-6">
+                        <!-- <input class="button-confirm button" type="button" value="Continue" onclick="closeForm()"> -->
+                        <a class="button-confirm button" type="button" value="Continue" href='thankyou.html'>Continue</a>
+                        <input class="button-warning button" type="button" value="Cancel" onclick="closeForm()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+
+    <footer>
+    </footer>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
 
 </html>
