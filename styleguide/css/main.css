@@ -81,16 +81,14 @@ nav a:focus {
 }
 
 .sidenav {
-    display: flex;
-    margin: 0, -50em;
+    margin: 0;
     padding: 0;
     padding-top: 1rem;
     align-content: center;
-    flex-direction: column;
-    width: 15rem;
-    top: 10%;
+    width: 200px;
+    height: 100%;
     overflow: auto;
-    position: sticky;
+    position: fixed;
 }
 
 .sidenav a {
@@ -820,11 +818,6 @@ POTENTIAL IMAGERIES---------------------
 
 
 /* TEMPLATE EXTRAS */
-
-.filter-container {
-    flex-direction: column;
-    align-items: stretch;
-}
 
 .product-listing-container {
     display: flex;
