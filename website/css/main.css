@@ -802,6 +802,8 @@ label {
     align-items: center;
     border-bottom: 1.5px solid black;
     margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     padding-bottom: 1rem;
 }
 
