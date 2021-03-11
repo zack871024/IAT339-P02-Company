@@ -23,13 +23,16 @@
     .product-listing-column-1 {
         display: flex;
         max-width: 100%;
+        justify-content: center;
     }
     .product-listing-container {
         margin-top: 0;
         padding-top: 0;
         justify-content: space-evenly;
     }
-    .product-listing-column-1 {
+    .product-listing-column-2 {
+        display: flex;
+        max-width: 100%;
         justify-content: center;
     }
 }
