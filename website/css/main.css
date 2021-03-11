@@ -90,10 +90,12 @@ footer {
 
 body {
     position: relative;
+    margin: auto;
 }
 
 .about-element ul {
     list-style: none;
+    margin-right: 2rem;
 }
 
 .head-list {
@@ -391,6 +393,8 @@ body h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 36px;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 body h3 {
