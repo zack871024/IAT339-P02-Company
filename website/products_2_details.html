@@ -60,16 +60,36 @@
             </div>
 
             <div class="product-flexbox-container-2">
-                <h3>Dover Keycap Set</h3>
+                <h3>Dover Black and White Keycap Set</h3>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
-                <h5>
+                <p>
                     A classic and clean black and white key cap set.
-                </h5>
-                <h5>Click for <a href="#">more.</a></h5>
+                </p>
+                <button type="button button-standard" class="collapsible">More...</button>
+                <div class="more-content">
+                    <p>This product was originally developed by us!</p>
+                </div>
+
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+
+                    for (i = 0; i < coll.length; i++) {
+                        coll[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            if (content.style.display === "block") {
+                                content.style.display = "none";
+                            } else {
+                                content.style.display = "block";
+                            }
+                        });
+                    }
+                </script>
 
                 <div class="product-flexbox-container-4">
                     <h4>CAD 55.00$</h4>
