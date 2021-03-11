@@ -67,10 +67,32 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
-                <h5>
-                    This set's theme brings you back to the 1970's with various and popping<br> bright colors to contrast the base color.
-                </h5>
-                <h5>Click for <a href="#">more.</a></h5>
+                <p>
+                    This set's theme brings you back to the 1970's with various and popping bright colors to contrast the base color.
+                </p>
+                <button type="button button-standard" class="collapsible">More...</button>
+                <div class="more-content">
+                    <p>This product was originally developed by us!</p>
+                </div>
+
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+
+                    for (i = 0; i < coll.length; i++) {
+                        coll[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            if (content.style.display === "block") {
+                                content.style.display = "none";
+                            } else {
+                                content.style.display = "block";
+                            }
+                        });
+                    }
+                </script>
+
+
 
                 <div class="product-flexbox-container-4">
                     <h4>CAD 55.00$</h4>
