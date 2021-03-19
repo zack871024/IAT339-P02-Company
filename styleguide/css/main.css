@@ -29,14 +29,6 @@ body {
     margin-left: 15%;
 }
 
-footer {
-    background-color: #51301d;
-    position: fixed;
-    bottom: 0;
-    width: 10000rem;
-    height: 3rem;
-}
-
 body {
     margin-right: 10%;
     display: grid;
