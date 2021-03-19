@@ -1,47 +1,53 @@
 <!DOCTYPE html>
-<html>
-<html lang="en">
 
-</html>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <meta charset="utf-8">
-<title>DoverCaps - About </title>
+
+
 
 <link href="css/main.css" rel="stylesheet">
 <link href="css/media.css" rel="stylesheet">
+<topnav>
+    <nav>
+        <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About & Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+</topnav>
 
+<head>
+    <title>DoverCaps - About </title>
+</head>
 
 <body>
     <div id="header">
         <div class="nav-brand">
             <a class="logo" href="index.html">
-                <img src="img/name.png" alt="logo" width="200px" height="50px" />
+                <img src="img/name.png" alt="logo" width="200" height="50" />
             </a>
 
             <a class="logo shopping-cart" href="shopping_cart.html">
-                <img src="img/shopping-cart.png" alt="shopping-cart-icon" width="40px" height="40px" />
+                <img src="img/shopping-cart.png" alt="shopping-cart-icon" width="40" height="40" />
             </a>
         </div>
     </div>
 
+
     <main>
-        <topnav>
-            <nav>
-                <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
-                <div class="topnav" id="myTopnav">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="products.html">Products</a>
-                    <a href="about.html">About & Contact Us</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-        </topnav>
+
         <script>
             function myFunction() {
                 var x = document.getElementById("myTopnav");

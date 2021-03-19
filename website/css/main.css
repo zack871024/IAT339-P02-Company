@@ -1259,10 +1259,14 @@ input[type="submit"]:hover {
 
 /* Citation */
 
-.citations h2,
-h3,
-h4 {
-    margin-left: 5rem;
+.citation-content {
+    display: flex;
+    margin: auto 10rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 6vw;
+    width: 50%;
+    height: 50%;
 }
 
 
