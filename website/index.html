@@ -14,6 +14,7 @@
 
 <link href="css/main.css" rel="stylesheet" />
 <link href="css/media.css" rel="stylesheet" />
+<link href="scripts/script.js" rel="scripts" />
 
 <body>
     <div id="header">
@@ -52,10 +53,41 @@
                 }
             </script>
         </nav>
-        <div class="banner" id="banner">
-            <!-- img src: https://unsplash.com/photos/UHqfUTDmdC4 -->
-            <img class="banner-image" src="img/banner-x1.jpg " />
+
+        <div class="banner-wrapper">
+            <div class="banner" id="banner">
+                <!-- img src: https://unsplash.com/photos/UHqfUTDmdC4 -->
+                <!-- https://www.youtube.com/watch?v=ILDyLRRJf2k&ab_channel=InventionTricks -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <img class="banner-image" src="img/banner1-x1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="banner-image" src="img/banner2-x1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="banner-image" src="img/banner3-x1.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <script src="scripts/script.js"></script>
+
+            </div>
         </div>
+
         <h2 class="page-title">New Products</h2>
 
         <div class="product-listing-container">
@@ -73,6 +105,8 @@
                 <a href="products_2_details.html">
                     <h3>Black and White Keycap Set</h3>
                 </a>
+
+
                 <h4>CAD 52.00$</h4>
             </div>
 
