@@ -173,8 +173,9 @@ body {
 /* Banner End */
 
 footer {
+    display: flex;
     background-color: #51301d;
-    position: relativ;
+    position: relative;
     bottom: 0;
     width: 100%;
     margin-top: 10vw;
@@ -1247,4 +1248,31 @@ input[type="submit"]:hover {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
+}
+
+
+/* Citation */
+
+.citations h2,
+h3,
+h4 {
+    margin-left: 5rem;
+}
+
+
+/* Footer Links */
+
+.footer-link {
+    width: 100%;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    text-justify: auto;
+}
+
+.footer-link:hover {
+    background-color: #C3996B;
 }
