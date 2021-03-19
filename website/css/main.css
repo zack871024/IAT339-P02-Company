@@ -747,6 +747,12 @@ select {
 .product-flexbox-container-1 .dot {
     margin-top: 3rem;
     position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+.dot:hover {
+    background-color: #C3996B;
 }
 
 .product_image {
