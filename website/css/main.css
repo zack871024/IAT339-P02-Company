@@ -86,11 +86,6 @@ body {
 
 /* Hide the images by default */
 
-
-/* .mySlides {
-    display: none;
-} */
-
 .banner-image {
     max-width: 100%;
 }
@@ -749,6 +744,15 @@ select {
 
 /* Product listings */
 
+.product-flexbox-container-1 .dot {
+    margin-top: 3rem;
+    position: relative;
+}
+
+.product_image {
+    height: 100%;
+}
+
 #progress {
     width: 100%;
     background-color: grey;
@@ -969,8 +973,6 @@ POTENTIAL IMAGERIES---------------------
     width: 25%;
     height: 100%;
 }
-
-.image-flexbox-container-sm a img {}
 
 
 /* TEMPLATE EXTRAS */
